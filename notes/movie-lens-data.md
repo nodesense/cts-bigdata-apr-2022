@@ -1,6 +1,5 @@
 ```
-wget https://files.grouplens.org/datasets/movielens/ml-latest-small.zip
-unzip 
+wget https://files.grouplens.org/datasets/movielens/ml-latest-small.zip 
 ls
 unzip ml-latest-small.zip
 ls
