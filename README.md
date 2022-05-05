@@ -20,7 +20,7 @@ ensure jps listing DataNode, NameNode, SecondaryNameNode, ResourceManager runnin
 ## Start Jupyter
 
 ```
-jupyterlab --no-browser --ip="0.0.0.0"
+jupyter lab --no-browser --ip="0.0.0.0"
 
 ```
 
