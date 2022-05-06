@@ -80,16 +80,21 @@ ping ubuntu-virtual-machine
 
 # start jupyter
 
-```
-jupyterlab --no-browser --ip="0.0.0.0"
-```
-
-or 
+For all
 
 ```
 jupyter lab --no-browser --ip="0.0.0.0"
 ```
 
+James
+
+
+
+```
+jupyter-lab --no-browser --ip="0.0.0.0"
+```
+
+or 
 
 notedown the url listed by the command output
 
