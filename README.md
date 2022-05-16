@@ -27,6 +27,26 @@ jupyter lab --no-browser --ip="0.0.0.0"
 Look for url   starts with ubuntu-virtual-machine, copy and paste into google chrome on windows
 
 
+# Start Meta Data Server for hive
+
+open terminal 
+
+```
+cd $HIVE_HOME 
+
+$HIVE_HOME/bin/hive --service metastore
+```
+
+
+# Run Hive Cli that connects to Meta Data Server on need basic
+
+Open new terminal
+
+```
+cd $HIVE_HOME
+$HIVE_HOME/bin/hive
+```
+
 ## Git pull from original branch
 
 ```
