@@ -1,5 +1,5 @@
 ```
-1. Extract the zip file 
+1. Download and Extract the zip file  https://github.com/gopalakrishnan-subramani/data-engineering/blob/main/e-commerce.zip
 
 
 2. upload data.csv into hadoop /ecommerce/raw directory
@@ -12,9 +12,9 @@
 
 5. DIY: Store the data into partitioned way in hadoop (hint is partitionBy)
             /ecommerce/tree/
-                                2010
-                                    10
-                                        14
+                                2010 [year]
+                                    10 [month]
+                                        14 [day]
                                                 data files
 
 6. Find Top 10 customers in decensing order who bought more valuables 
