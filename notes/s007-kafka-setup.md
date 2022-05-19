@@ -10,7 +10,7 @@ tar xf confluent-5.5.5-2.12.tar.gz
 
 sudo mv confluent-5.5.5 /opt
 
-chmod 777 /opt/confluent-5.5.5
+sudo chmod 777 /opt/confluent-5.5.5
 ```
 
 
