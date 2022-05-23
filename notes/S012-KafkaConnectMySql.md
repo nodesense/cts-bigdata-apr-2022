@@ -18,3 +18,22 @@ use kafka-avro-console-consumer to display teh brands data..
 insert 2 brands and see in consumer, update 1 brands and validate in consumer
 
 ```
+
+
+
+DIY - Sink 
+
+
+---
+
+DIY 
+
+```
+run kafka-avro-console-producer for brands table [hint, no price column], topic is "brands"
+
+{"id": 100, "name":"Apple"}
+{"id": 101, "name":"Samsung"}
+
+
+and create a mysql sink , that sink avro consol producer data into mysql table brands 
+```
