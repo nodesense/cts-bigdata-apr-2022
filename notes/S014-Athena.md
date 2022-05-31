@@ -11,3 +11,19 @@ GROUP BY ratings.movieid, title
 HAVING  avg(rating) >= 3.5 AND count(rating) >= 100
 
 ```
+
+CTAS
+
+```
+
+CREATE TABLE "gks_db"."raw_popular_movies" AS 
+SELECT ratings.movieid, title, avg(rating) as avg_rating, 
+                count(rating) as total_ratings 
+FROM "gks_db"."raw_ratings" ratings
+INNER JOIN  "gks_db"."raw_movies" movies ON ratings.movieid = movies.movieid
+GROUP BY ratings.movieid, title
+HAVING  avg(rating) >= 3.5 AND count(rating) >= 100
+ 
+ 
+```
+
