@@ -4,6 +4,11 @@ wget https://archive.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar
 
 
 tar xf hadoop-2.7.7.tar.gz
+
+sudo mv hadoop-2.7.7 /opt
+
+sudo chmod 777 -R /opt/hadoop-2.7.7
+
 ```
 
 
@@ -13,11 +18,11 @@ tar xf hadoop-2.7.7.tar.gz
 nano ~/.bashrc
 ```
 
-below to be copied into .bashrc
+below to be copied into .bashrc  or .zshrc depends on shell type
 
 
 ```
-export HADOOP_HOME=/home/ubuntu/hadoop-2.7.7
+export HADOOP_HOME=/opt/hadoop-2.7.7
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:.
 ```
@@ -34,13 +39,13 @@ add below to /etc/environment file
 sudo nano /etc/environment
 ```
 
-paste below at end of the file without messup existing content
+paste below at end of the file without messup existing content, very careful modifying environment files
 
 
 ```
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-HADOOP_HOME=/home/ubuntu/hadoop-2.7.7
+HADOOP_HOME=/opt/hadoop-2.7.7
 ```
 
 
@@ -108,5 +113,12 @@ jps
 try this in ubuntu browser
 
 http://localhost:50070
+
+try resource manager http://localhost:8088
+
+few hadoop commands to check all working 
+
+https://github.com/nodesense/cts-data-engineering-feb-2022/blob/main/notes/003-hadoop-basic-commands.md
+
 
 
