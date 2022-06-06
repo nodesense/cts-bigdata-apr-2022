@@ -5,7 +5,20 @@ config = SparkConf()
 # **** ['/home/ubuntu/workshop/pyspark/movie-lens.py', 'ratings.csv', 'movies.csv', 'result.csv'] 4
 
 # spark-submit --master local movie-lens.py  ratings.csv movies.csv result.csv
+
+# AWS S3 
+
+# spark-submit --master yarn s3://gks-bucket/scripts/movie-lens.py  s3://gks-bucket/movielens/ratings/ratings.csv s3://gks-bucket/movielens/movies/movies.csv s3://gks-bucket/movielens-results/popular-movies/
+
+
+
 #  spark-submit --master local movie-lens.py  hdfs://localhost:9000/ml-latest-small/ratings.csv hdfs://localhost:9000/ml-latest-small/movies.csv hdfs://localhost:9000/most-popular-movies
+
+# nano movie-lens.py
+
+# paste this file code
+
+# spark-submit --master yarn movie-lens.py  s3://gks-bucket/movielens/ratings/ratings.csv s3://gks-bucket/movielens/movies/movies.csv s3://gks-bucket/movielens-results/popular-movies/
 
 print ("****", sys.argv, len(sys.argv))
 
