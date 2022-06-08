@@ -14,3 +14,17 @@
 13. Open miniconda prompt `pip install jupyterlab`
 14. Run jupyter on miniconda prompt `jupyter lab`
 15. 
+
+
+# run spark cluster
+
+open command prompt
+
+```
+%SPARK_HOME%/bin/spark-class org.apache.spark.deploy.master.Master
+```
+Now check, http://localhost:8080/ from windows  browser, copy the spark://192.x.y.z ip and use with worker to join the cluster
+
+open command prompt Run Worker 1 copy the master url and paste in below command
+
+%SPARK_HOME%/bin/spark-class org.apache.spark.deploy.worker.Worker  spark://192.168.11.67:7077
