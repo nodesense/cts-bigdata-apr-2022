@@ -1,0 +1,5 @@
+spark kafka aws
+   kafka spark pyspark
+   PYTHON sQL
+
+   PythoN
